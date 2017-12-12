@@ -1,0 +1,37 @@
+<html>
+<head>
+
+
+<title><h1>Calculo<h1></title>
+</head>
+
+
+<body>
+
+<body>
+<form name="calculodefinanciamento" method="get" action="">
+
+<label>Valor do financiamento:<input	type="text" name="valordofinanciamento"</label></br>
+</br>
+
+<label>Numero de parcelas:<input	type="text" name="numerodeparcelas"</label></br>
+</br>
+
+<label>Valor da parcela mensal:<input type="text" name="valordaparcelamensal"</label> </br>	
+</fieldset>
+
+</br>
+
+</body>
+<script>
+function calculartotal(){
+var valordofinanciamento= document.forms['calculodefinanciamento']['valordofinanciamento'].value;
+var numerodeparcelas = document.forms['calculodefinanciamento']['numerodeparcelas'].value;
+var valorfinal= (valordofinanciamento+numerodeparcelas).;
+document.forms['calculodefinanciamento']['valordaparcelamensal'].value = valorFinal;
+
+}
+</script>		
+
+</body>
+</html>

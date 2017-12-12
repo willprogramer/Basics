@@ -1,0 +1,118 @@
+<! doctype html>
+
+<html>
+<head>
+<style>
+body {
+    background-color: #d0e4fe;
+}
+h1 {
+    color: orange;
+    text-align: center;
+}
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+</style>
+
+<title>Exercicio 6 ambbrog</title>
+ <meta charset="UTF-8">
+</head>
+<body>
+
+<form action="http://www.qpainformatica.com.br/echo/processa" >
+<fieldset>
+
+<h1>Cadastro do Cliente</h1>
+<br/>
+Primeiro nome</br>
+<input type="text" name="nome">
+<br/>
+Ultimo nome</br>
+<input type="text" name="ultimonome"><br/>
+</br>
+Data de nascimento:
+<input type="date" name="bday">
+</fieldset>
+
+</br>
+<fieldset>
+<legend>Sexo</legend>
+<input type="radio" name="sexo" value="masculino"> Masculino
+<br/>
+<input type="radio" name="sexo" value="feminino"> Feminino
+<br/>
+<input type="radio" name="sexo" value="outro"> Outro
+<br/>
+</fieldset>
+<fieldset>
+<legend> Endereço</legend>
+<br/>
+Rua
+<input type="text" name="Rua"> 
+</br>
+Numero:
+<input type="text" name="numero"> 
+</br>
+Bairro
+<input type="text" name="Bairro"> 
+</br>
+Cidade
+<input type="text" name="Cidade"> 
+</br>
+Estado
+<input type="text" name="Estado"> 
+</br>
+</fieldset>
+<br/>
+<fieldset>
+<legend>Profissional</legend>
+Salario:<br/>
+<input type="number" name="Salario"> 
+</br>
+Emprego Atual<br/>
+<input type="text" name="empregoatual">
+<br/>
+Tempo de trabalho em seu emprego atual<br/>
+<input type="text" name="aquantotempotrabalhaemseutrabalhoatual">
+</fieldset></br>
+<br/>
+
+
+<fieldset>
+<legend> Deseja ser contactado por:</legend>
+<input type="checkbox" name="contato telefone" value="tel"> Por Telefone</br>
+<input type="checkbox" name="email" value="email"> Por email</br>
+</fieldset><br/>
+<br/> 
+
+<fieldset>	
+<head>Financiamento</head>
+<body>
+<form name="calculodefinanciamento" method="get" action=""
+
+<label>Valor do financiamento:<input	type="text" name="valordofinanciamento"</label></br>
+</br>
+
+<label>Numero de parcelas:<input	type="text" name="numerodeparcelas"</label></br>
+</br>
+<label>Porcentagem de juros:<input type="text" name="porcentagemdejuros" onblur="calculartotal()"</label></br>
+</br>
+<label>Valor da parcela mensal:<input type="text" name="valordaparcelamensal"</label> </br>	
+</fieldset>
+
+</br>
+
+</body>
+<script>
+function calculartotal(){
+var valordofinanciamento= document.forms['calculodefinanciamento']['valordofinanciamento'].value;
+var numerodeparcelas = document.forms['calculodefinanciamento']['numerodeparcelas'].value;
+var porcentagemdejuros = document.forms['calculodefinanciamento']['porcentagemdejuros'].value;
+var valorfinal= (valordofinanciamento/numerodeparcelas+porcentagemdejuros).;
+document.forms['calculodefinanciamento']['valordaparcelamensal'].value = valorFinal;
+
+}
+</script>	
+</html>

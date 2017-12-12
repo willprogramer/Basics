@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+<head>
+<title> ex amb <title>
+
+<script type="text/javascript">
+<!--
+  function calcular(){
+    var x = parseFloat(document.form1.x.value);
+    var y = parseFloat(document.form1.y.value);
+	var z = parseFloat(document.form1.z.value);
+    window.alert(x / y + z);
+  }
+  //-->	
+</script>
+
+
+<form name="form1">
+Valor do Financiamento:
+</br>
+<input type="text" name="x"><br>
+Numero de parcelas:
+</br>
+<input type="text" name="y"><br>
+Porcentagem de juros:
+</br>
+<input type="text" name="z"><br>
+Clique aqui para calcular:
+<input type="button" value="Calcular" onclick="calcular()">
+</form>
+
+</body>
+</html>

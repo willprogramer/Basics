@@ -1,0 +1,7 @@
+Utilizando as TAGs DIV e SPAN gere uma página HTML com o formato apresentado no PDF chamado EXEMPLO DIV SPAN na área de downloads. Utilizar CSS EXTERNO (obrigatório). Colar o respectivos códigos fonte no campo de entrega.
+
+Inclua pelo menos uma imagem com link externo em cada DIV. Faça a imagem flutuar a esquerda e a direta do texto.
+
+Incluir bordas arredondadas.
+
+Prazo de entrega: 20/03/2016. até 23:55 
